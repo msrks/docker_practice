@@ -7,6 +7,10 @@ $ docker build -t flask_docker .
 $ docker run -d -p 5000:5000 flask_docker
 $ curl flask_docker
 hello world 
+
+#$ docker images でimage id確認
+$ docker tag <image-id> msrks/flask_docker
+$ docker push msrks/flask_docker
 ```
 
 Dockerfile
